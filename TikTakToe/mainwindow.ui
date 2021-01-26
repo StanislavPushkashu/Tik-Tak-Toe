@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="TikTakGrid"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="ExitMenu">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="ExitGameAction"/>
+   </widget>
+   <widget class="QMenu" name="PlayerTypeMenu">
+    <property name="title">
+     <string>Player type</string>
+    </property>
+    <addaction name="XPlayerAction"/>
+    <addaction name="OPlayerAction"/>
+   </widget>
+   <widget class="QMenu" name="GameMenu">
+    <property name="title">
+     <string>GAME</string>
+    </property>
+    <addaction name="StartGameAction"/>
+    <addaction name="StopGameAction"/>
+   </widget>
+   <addaction name="GameMenu"/>
+   <addaction name="PlayerTypeMenu"/>
+   <addaction name="ExitMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="PlayerVSPlayerAction">
+   <property name="text">
+    <string>Player vs Player</string>
+   </property>
+  </action>
+  <action name="PlayerVSAIAction">
+   <property name="text">
+    <string>Player vs AI</string>
+   </property>
+  </action>
+  <action name="XPlayerAction">
+   <property name="text">
+    <string>X-Player</string>
+   </property>
+  </action>
+  <action name="OPlayerAction">
+   <property name="text">
+    <string>O-Player</string>
+   </property>
+  </action>
+  <action name="StartGameMenu">
+   <property name="text">
+    <string>StartGame</string>
+   </property>
+  </action>
+  <action name="StartGameAction">
+   <property name="text">
+    <string>START</string>
+   </property>
+  </action>
+  <action name="StopGameAction">
+   <property name="text">
+    <string>STOP</string>
+   </property>
+  </action>
+  <action name="ExitGameAction">
+   <property name="text">
+    <string>Exit Game</string>
+   </property>
+  </action>
+  <action name="AboutGameAction">
+   <property name="text">
+    <string>About Game</string>
+   </property>
+  </action>
+  <action name="AboutQTAction">
+   <property name="text">
+    <string>About QT</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
